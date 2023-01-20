@@ -1,5 +1,4 @@
 const puppeteer = require('puppeteer');
-// const express = require('express')
 
 const dom = async () => {
     const browser = await puppeteer.launch({ headless: true });
@@ -18,6 +17,8 @@ const dom = async () => {
         await page.waitForSelector('.description')
         const infos = {
             id: counter += 1,
+            productLink: link,
+            productCode: link.substring(61),
             title: await page.$eval('.description', (el) => el.previousElementSibling.innerHTML),
             description:  await page.$eval('.description', (el) => el.innerHTML),
             priceUSD: (await page.$eval('.price', (el) => el.innerHTML)).substring(1),

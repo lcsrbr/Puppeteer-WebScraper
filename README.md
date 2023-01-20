@@ -24,6 +24,10 @@ Para acessar o projeto, atente-se a cada passo descrito a seguir, e se tiver qua
   3. Acesse a API a partir do endereço:
 
   - _[http://localhost:3001/](http://localhost:3001/)_
-  #
-  
+
+    3.1. É possível acessar a partir do ID do notebook. Para acessar, basta adicionar o ID após o "/" da rota. Ex:
+
+    - _[http://localhost:3001/15](http://localhost:3001/15)_
+    #
+    
   # [Outros Projetos](https://portfolio-bay-omega-17.vercel.app/#projetos)
